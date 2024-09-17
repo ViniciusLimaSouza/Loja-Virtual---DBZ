@@ -1,0 +1,302 @@
+/* Configurações globais */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #ffcc00; /* Amarelo vibrante (dourado) no estilo das esferas do dragão */
+}
+
+/* Cabeçalho */
+.site-header {
+    background-color: #ff6f00; /* Cor inspirada no uniforme laranja de Goku */
+    padding: 15px 0;
+    border-bottom: 2px solid #007bff; /* Azul vibrante, inspirado na faixa de Goku */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000; /* Sombra para destacar o título */
+    font-family: 'Dragon Ball Z', sans-serif; /* Font estilo Dragon Ball */
+}
+
+/* Botão do Carrinho */
+.cart-container {
+    position: relative;
+}
+
+.cart-btn {
+    position: relative;
+    padding: 12px 24px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ffc107; /* Cor de fundo amarela do botão */
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: #e0a800; /* Cor mais escura para o hover */
+}
+
+.cart-btn i {
+    margin-right: 8px;
+}
+
+.cart-container .badge {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Login */
+.login-container {
+    max-width: 500px;
+    padding: 40px;
+    border: 2px solid #ff6f00; /* Laranja vibrante nas bordas */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    color: #333;
+    text-shadow: 2px 2px #ff6f00;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff6f00;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Cards */
+.card-columns {
+    column-count: 3;
+    column-gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border: 2px solid #007bff; /* Azul vibrante para o estilo Dragon Ball Z */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff6f00; /* Bordas laranja nas imagens */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Botões dos produtos */
+.card .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.card .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.card .btn-warning {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+}
+
+.card .btn-primary:hover, 
+.card .btn-warning:hover {
+    opacity: 0.9;
+}
+
+.about-section {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa; /* Cor de fundo opcional */
+}
+
+/* Seção Sobre Nós - largura total da página */
+.about-section {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa; /* Cor de fundo opcional para destacar a seção */
+}
+
+.about-card {
+    border: none; /* Remove a borda padrão do card */
+    border-radius: 15px; /* Bordas arredondadas mais suaves */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos de hover */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.about-card:hover {
+    transform: scale(1.02); /* Leve aumento de tamanho no hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+}
+
+.about-card .card-body {
+    padding: 20px;
+    background-color: #ffffff; /* Cor de fundo branca para o corpo do card */
+}
+
+.about-card .card-title {
+    font-size: 2rem; /* Tamanho da fonte aumentado */
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold; /* Negrito para o título */
+}
+
+.about-card .card-text {
+    font-size: 1.2rem; /* Tamanho da fonte aumentado para melhor legibilidade */
+    color: #555; /* Cor de texto mais escura para contraste */
+    line-height: 1.6; /* Melhora a legibilidade */
+}
+
+.about-card img {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    max-height: 400px; /* Define uma altura máxima para a imagem */
+    object-fit: cover; /* Mantém a proporção da imagem e evita distorções */
+}
+
+/* Estiliza o card em dispositivos móveis */
+@media (max-width: 768px) {
+    .about-card {
+        margin: 0; /* Remove a margem para largura total em dispositivos móveis */
+    }
+}
+
+
+
+
+/* Rodapé */
+.site-footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    border-top: 2px solid #007bff; /* Bordas azul vibrante no estilo da faixa de Goku */
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffcc00; /* Texto dourado para remeter às esferas do dragão */
+}
+
+/* Texto com efeito de aura (opcional) */
+.text-aura {
+    color: #fff;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
+}
+
